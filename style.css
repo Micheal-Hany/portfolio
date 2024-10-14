@@ -1,5 +1,3 @@
-/* GENERAL */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -175,6 +173,7 @@ section {
   width: 400px;
   margin: auto 0;
 }
+
 .profile-pic {
   width: 350px; /* Adjust size as needed */
   height: 350px; /* Ensure width and height are equal for a perfect circle */
@@ -182,7 +181,6 @@ section {
   object-fit: cover; /* Ensures the image covers the entire area without distortion */
   object-position: top; /* Adjusts the focus to the top to show more of the body */
 }
-
 
 .section__text {
   align-self: center;
@@ -431,10 +429,98 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-footer p {
-  text-align: center;
+/* MEDIA QUERIES */
+
+/* For tablets (up to 1200px) */
+@media screen and (max-width: 1200px) {
+  section {
+    margin: 0 5rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  #profile {
+    gap: 2rem;
+  }
+
+  .section__pic-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    padding: 0.75rem;
+    width: 6rem;
+  }
+}
+
+/* For mobile devices (up to 768px) */
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: block;
+  }
+
+  section {
+    margin: 0 2rem;
+  }
+
+  .section-container {
+    flex-direction: column;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 0.5rem;
+    width: 5rem;
+  }
+
+  .about-details-container {
+    padding: 1rem;
+  }
+
+  .arrow {
+    right: -3rem;
+    bottom: 1rem;
+  }
+
+  .article-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .color-container {
+    padding: 1rem;
+  }
 }
